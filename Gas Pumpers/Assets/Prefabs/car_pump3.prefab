@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8572526289967376770}
-  - component: {fileID: 8572526289967376797}
   m_Layer: 0
   m_Name: car_pump3
   m_TagString: Untagged
@@ -117,18 +116,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8572526289967376797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8572526289967376771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c1dcc2fde53349698295da0528eaeab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CarArt: {fileID: 8572526288886603343}
-  isVisible: 1
-  run: 1
