@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class FuelPickup : MonoBehaviour
 {
     public bool pickUpAllowed;
+    public bool pickedUp;
 
     // Start is called before the first frame update
     void Start()
     {
       pickUpAllowed = false;
+      pickedUp = false;
 
     }
 
@@ -20,6 +22,7 @@ public class FuelPickup : MonoBehaviour
     {
       if (pickUpAllowed && Input.GetKeyDown(KeyCode.R)){
         FuelPickUp();
+        pickedUp = true;
       }
 
     }
@@ -41,6 +44,6 @@ public class FuelPickup : MonoBehaviour
         GameObject desiredParentGameObject = GameObject.FindGameObjectsWithTag("Cart")[0];
         GameObject targetGameObject = gameObject;
         int numCartItems = desiredParentGameObject.transform.childCount;
-        if(numCartItems < 1){targetGameObject.transform.parent = desiredParentGameObject.transform; Debug.Log(numCartItems); }
+        if(numCartItems < 1){}//targetGameObject.transform.parent = desiredParentGameObject.transform; Debug.Log(numCartItems); }
     }
 }

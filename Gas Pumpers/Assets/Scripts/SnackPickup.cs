@@ -5,11 +5,14 @@ using UnityEngine;
 public class SnackPickup : MonoBehaviour
 {
     public bool pickUpAllowed;
+    public bool pickedUp;
 
     // Start is called before the first frame update
     void Start()
     {
       pickUpAllowed = false;
+      pickedUp = false;
+      
 
     }
 
@@ -18,6 +21,7 @@ public class SnackPickup : MonoBehaviour
     {
       if (pickUpAllowed && Input.GetKeyDown(KeyCode.R)){
         SnackPickUp();
+        pickedUp = true;
       }
     }
 
@@ -38,6 +42,6 @@ public class SnackPickup : MonoBehaviour
         GameObject desiredParentGameObject = GameObject.FindGameObjectsWithTag("Cart")[0];
         GameObject targetGameObject = gameObject;
         int numCartItems = desiredParentGameObject.transform.childCount;
-        if(numCartItems < 1){targetGameObject.transform.parent = desiredParentGameObject.transform;}
+        if(numCartItems < 1){} // targetGameObject.transform.parent = desiredParentGameObject.transform;}
     }
 }
