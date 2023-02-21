@@ -839,7 +839,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2328453790984935393, guid: 391d7cdaed8e8424984b0569c57f4888, type: 3}
-  spawnPositions: []
+  spawnPositions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   minWaitTime: 0.1
   maxWaitTime: 1
   moveSpeedY: 3

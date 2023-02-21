@@ -26,8 +26,9 @@ public class Gas_cars : MonoBehaviour
     {
         while (true) // Loop forever
         {
-            // Choose a random spawn position from the list
-            Vector3 spawnPosition = spawnPositions[Random.Range(0, spawnPositions.Count)];
+            // Choose a random spawn position from the list of spawn gameobjs
+            int index = Random.Range(0, spawnPositions.Count);
+            Vector3 spawnPosition = spawnPositions[index];
             
             // Spawn the object at the chosen position
             spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
