@@ -7,7 +7,6 @@ public class SnackSpawn : MonoBehaviour
 
     public GameObject snackPrefab;
     public Transform spawnPoint;
-    public GameObject spawnGameObject;
 
     void Start(){
 
