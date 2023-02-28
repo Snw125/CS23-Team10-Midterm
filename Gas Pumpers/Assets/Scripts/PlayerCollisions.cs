@@ -16,12 +16,12 @@ public class PlayerCollisions : MonoBehaviour
             if (other.gameObject.tag == "Car") {
                     Debug.Log("Game Over!");
                     gameOverText.SetActive(true);
-                    Time.timeScale = 0;
+                    Time.timeScale = 0f;
             }
             if (other.gameObject.tag == "Enemy") {
                     Debug.Log("Game Over!");
                     gameOverText.SetActive(true);
-                    Time.timeScale = 0;
+                    Time.timeScale = 0f;
             }
     }
 }

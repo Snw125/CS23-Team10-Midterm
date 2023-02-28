@@ -16,7 +16,6 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
        public float maxY;
        public bool chase;
        public GameObject player;
-       public GameObject gameOverText;
 
        void Start(){
               waitTime = startWaitTime;
@@ -25,8 +24,6 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
               moveSpot.position = new Vector2(randomX, randomY);
               chase = false;
               player = GameObject.FindWithTag("Player");
-
-              gameOverText.SetActive(false);
        }
 
        void Update(){
