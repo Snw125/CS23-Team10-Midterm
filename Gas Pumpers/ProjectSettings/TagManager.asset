@@ -7,6 +7,9 @@ TagManager:
   - Cart
   - Gas
   - Snack
+  - Car
+  - GameOver
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -16,6 +16,7 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
        public float maxY;
        public bool chase;
        public GameObject player;
+       public GameObject gameOverText;
 
        void Start(){
               waitTime = startWaitTime;
@@ -24,6 +25,8 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
               moveSpot.position = new Vector2(randomX, randomY);
               chase = false;
               player = GameObject.FindWithTag("Player");
+
+              gameOverText.SetActive(false);
        }
 
        void Update(){
@@ -53,11 +56,5 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
         //         yield return new WaitForSeconds(waitTimeChase);
         //         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         // }
-
-        public void OnCollisionEnter2D(Collision2D other){
-            if (other.gameObject.tag == "Player") {
-                    Debug.Log("Game Over!");
-            }
-       }
 
 }

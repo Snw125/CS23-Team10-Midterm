@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6588663206112417591}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   startWaitTime: 2
+  waitTimeChase: 1
   moveSpot: {fileID: 0}
   minX: -8.5
   maxX: 8.5
@@ -103,6 +104,7 @@ MonoBehaviour:
   maxY: -1
   chase: 0
   player: {fileID: 0}
+  gameOverText: {fileID: 0}
 --- !u!1 &6588663206873328712
 GameObject:
   m_ObjectHideFlags: 0
