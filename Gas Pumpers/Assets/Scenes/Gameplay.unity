@@ -583,7 +583,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4627603304729628065, guid: b52c5a8d5bcd1476dbb5309dbdcb5a65, type: 3}
   minSpawnInterval: 0.2
   maxSpawnInterval: 1.2
-  moveSpeed: 3
+  moveSpeed: 10
   destroyXPosition: 8.68
   spawnPoints:
   - {fileID: 510121949}
