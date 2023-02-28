@@ -26,3 +26,4 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw ("Vertical");
     }
 }
+//anim.SetBool("walk", true);
