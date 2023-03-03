@@ -11,7 +11,13 @@ public class GameHandler : MonoBehaviour {
       private AssetBundle myLoadedAssetBundle;
       private string[] scenePaths;
 
-      void Start(){
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Gameplay");
+
+    }
+
+        void Start(){
             //UpdateScore();
             myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/Scenes");
             scenePaths = myLoadedAssetBundle.GetAllScenePaths();
