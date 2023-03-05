@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SpawnAndMove : MonoBehaviour
 {
-    public GameObject objectToSpawn; // The prefab of the object to spawn
+    public GameObject Traffic; // The prefab of the object to spawn
     public float minSpawnInterval; // The minimum interval between spawns
     public float maxSpawnInterval; // The maximum interval between spawns
     public float moveSpeed; // The speed at which the object moves
     public float destroyXPosition; // The x-coordinate at which the object should be destroyed
     public Transform[] spawnPoints; // The spawn points for the objects
-
+    
     private float spawnTimer = 0f; // Timer for spawning objects
     private float currentSpawnInterval; // The current interval between spawns
 
@@ -29,8 +29,10 @@ public class SpawnAndMove : MonoBehaviour
         {
             spawnTimer = 0f;
             int randomIndex = Random.Range(0, spawnPoints.Length);
-            GameObject newObject = Instantiate(objectToSpawn, spawnPoints[randomIndex].position, Quaternion.identity);
-            StartCoroutine(MoveObject(newObject.transform));
+
+            GameObject newTraffic = Instantiate(Traffic, spawnPoints[randomIndex].position, Quaternion.identity);
+
+            StartCoroutine(MoveObject(newTraffic.transform));
             currentSpawnInterval = Random.Range(minSpawnInterval, maxSpawnInterval);
         }
     }
