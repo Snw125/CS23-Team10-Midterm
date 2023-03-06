@@ -11,6 +11,10 @@ public class health : MonoBehaviour
     public Sprite emptyHeart; // empty heart sprite
     public GameHandler gameHandler; // reference to the LivesManager script
 
+    void Start() {
+        gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+    }
+
     private void Update()
     {
         int lives = gameHandler.playerLives; // get the lives variable from the LivesManager script

@@ -2167,7 +2167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2102688093}
   - component: {fileID: 2102688094}
-  - component: {fileID: 2102688095}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: GameHandler
@@ -2203,27 +2202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLives: 5
---- !u!114 &2102688095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102688092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceda51f08e00a4719a95cd77d32a123b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 66744345}
-  - {fileID: 701388957}
-  - {fileID: 2108096851}
-  - {fileID: 2060643560}
-  - {fileID: 512131848}
-  fullHeart: {fileID: 21300000, guid: 19cd6b4a91e21448fafffa1d7a8bba40, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 743cdb3e30a42448b8144cc1fcc04f6c, type: 3}
-  gameHandler: {fileID: 0}
 --- !u!1 &2108096849
 GameObject:
   m_ObjectHideFlags: 0
