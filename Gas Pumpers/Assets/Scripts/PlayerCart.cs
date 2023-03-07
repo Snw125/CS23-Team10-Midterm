@@ -28,29 +28,27 @@ public GameObject theItem;
     {
         // adding to cart
         if ((nearItem)&&(!cartFilled)){
-            if(Input.GetKeyDown(KeyCode.R)){
+            if(Input.GetKeyDown(KeyCode.Space)){
                 theItem.transform.parent = pCart;
                 Debug.Log("Added to cart!");
                 cartFilled = true;
-                
-
             }
            
         }
         // remocing from cart
-        else if (cartFilled){
-            if(Input.GetKeyDown(KeyCode.R)){
-                theItem.transform.SetParent(null);
-                Destroy(theItem);
-                theItem = null;
-                cartFilled = false;
-                Debug.Log("Removed from cart!");
-            }
-            //if hit spacebar
-            //set parent of theItem = world
-            // theItem = null;
-            // cartFilled = false;
-        }
+        // else if (cartFilled){
+        //     if(Input.GetKeyDown(KeyCode.R)){
+        //         theItem.transform.SetParent(null);
+        //         Destroy(theItem);
+        //         theItem = null;
+        //         cartFilled = false;
+        //         Debug.Log("Removed from cart!");
+        //     }
+        //     //if hit spacebar
+        //     //set parent of theItem = world
+        //     // theItem = null;
+        //     // cartFilled = false;
+        // }
     }
 
     public void OnTriggerEnter2D(Collider2D other){

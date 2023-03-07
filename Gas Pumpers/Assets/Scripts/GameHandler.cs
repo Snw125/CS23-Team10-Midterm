@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameHandler : MonoBehaviour {
 
       //public GameObject scoreText;
-      //private int playerScore = 0;
+      private int playerScore = 0;
       public int playerLives = 5;
       private AssetBundle myLoadedAssetBundle;
       private string[] scenePaths;
@@ -41,10 +41,11 @@ public class GameHandler : MonoBehaviour {
       }
 
 
-    //   public void AddScore(int points){
-    //         playerScore += points;
-    //         UpdateScore();
-    //   }
+      public void addPoint(){
+            playerScore++;
+            Debug.Log("Score: " + playerScore);
+            //UpdateScore();
+      }
 
     //   void UpdateScore(){
     //         Text scoreTextB = scoreText.GetComponent<Text>();
