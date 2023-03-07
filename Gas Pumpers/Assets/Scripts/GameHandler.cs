@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour {
 
-      //public GameObject scoreText;
-      private int playerScore = 0;
+      public GameObject scoreText;
+      public static int playerScore = 0;
       public int playerLives = 5;
       private AssetBundle myLoadedAssetBundle;
       private string[] scenePaths;
@@ -38,17 +38,26 @@ public class GameHandler : MonoBehaviour {
                 Time.timeScale = 0f;
                 SceneManager.LoadScene("EndScene");
             }
+
+            Text scoreTextB = scoreText.GetComponent<Text>();
+            if (SceneManager.GetActiveScene().name == "EndScene") {
+                  scoreTextB.text = "FINAL SCORE: " + playerScore;
+            }
       }
 
 
       public void addPoint(){
             playerScore++;
             Debug.Log("Score: " + playerScore);
-            //UpdateScore();
+            UpdateScore();
       }
 
-    //   void UpdateScore(){
-    //         Text scoreTextB = scoreText.GetComponent<Text>();
-    //         scoreTextB.text = "" + playerScore;
-    //   }
+      void UpdateScore(){
+            Text scoreTextB = scoreText.GetComponent<Text>();
+            scoreTextB.text = "" + playerScore;
+      }
+
+      public int getScore(){
+        return playerScore;
+      }
 }
