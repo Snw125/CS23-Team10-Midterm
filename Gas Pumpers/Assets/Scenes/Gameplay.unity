@@ -873,13 +873,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts:
-  - {fileID: 66744345}
-  - {fileID: 701388957}
-  - {fileID: 2060643560}
-  - {fileID: 512131848}
   - {fileID: 2108096851}
+  - {fileID: 512131848}
+  - {fileID: 2060643560}
+  - {fileID: 701388957}
+  - {fileID: 66744345}
   fullHeart: {fileID: 21300000, guid: 19cd6b4a91e21448fafffa1d7a8bba40, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 9b484d07572de3d4ab4129cfdf714082, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 026ac1f7ea2b34c9481e4b53f5811343, type: 3}
   gameHandler: {fileID: 2102688094}
 --- !u!4 &557851793
 Transform:
