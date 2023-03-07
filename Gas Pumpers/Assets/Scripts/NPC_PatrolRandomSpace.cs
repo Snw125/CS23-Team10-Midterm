@@ -60,6 +60,11 @@ public class NPC_PatrolRandomSpace : MonoBehaviour {
     // Improved Chase = Delay to enemy movement. do some math with the vectors you can get 
     // IEnumerator chasePlayer(){
     //         yield return new WaitForSeconds(waitTimeChase);
-    //         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+    //         float distx = Mathf.Abs(transform.position.x - player.transform.position.x);
+    //         float disty = Mathf.Abs(transform.position.y - player.transform.position.y);
+
+    //         Vector2 destination = new Vector2(transform.position.x + distx/2, transform.position.y+ disty/2);
+            
+    //         transform.position = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
     // }
 }

@@ -12,8 +12,8 @@ public class Gas_cars : MonoBehaviour
     
     public List<bool> isSpotFull;
     public List<GameObject> Timers;
-    public float numGasTypes;
-    public float numSnackTypes;
+    public int numGasTypes;
+    public int numSnackTypes;
     public float carTimerMin;
     public float carTimerMax;
 

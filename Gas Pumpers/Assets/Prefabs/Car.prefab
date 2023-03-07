@@ -413,10 +413,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7224fbb174439b4f90ea3c74b8bdc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: {fileID: 0}
+  TimeBar: {fileID: 0}
+  carSprite: {fileID: 7046617948108052202}
   gastype: 0
   snacktype: 0
   time: 0
   spot: 0
+  obtainedSnack: 0
+  obtainedGas: 0
+  currtime: 0
 --- !u!1 &7046617948108052200
 GameObject:
   m_ObjectHideFlags: 0

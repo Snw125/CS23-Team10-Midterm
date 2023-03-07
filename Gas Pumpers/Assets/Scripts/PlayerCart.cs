@@ -10,6 +10,7 @@ public class PlayerCart : MonoBehaviour
 public Transform pCart;
 public bool cartFilled;
 public bool nearItem;
+public bool nearTrash;
 public GameObject theItem;
 
 
@@ -29,6 +30,7 @@ public GameObject theItem;
         // adding to cart
         if ((nearItem)&&(!cartFilled)){
             if(Input.GetKeyDown(KeyCode.Space)){
+                Debug.Log("Fill Cart: " + cartFilled);
                 theItem.transform.parent = pCart;
                 Debug.Log("Added to cart!");
                 cartFilled = true;
@@ -83,6 +85,14 @@ public void OnTriggerExit2D(Collider2D other){
     //if other tag = pickable item
     //nearItem= false;
 
+}
+
+public void Destroy() {
+        theItem.transform.SetParent(null);
+        Destroy(theItem);
+        theItem = null;
+        cartFilled = false;
+        Debug.Log("Removed from cart!");
 }
 
 
