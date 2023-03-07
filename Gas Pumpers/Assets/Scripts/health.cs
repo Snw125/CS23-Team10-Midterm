@@ -9,7 +9,7 @@ public class health : MonoBehaviour
     public Image[] hearts; // array of heart images
     public Sprite fullHeart; // full heart sprite
     public Sprite emptyHeart; // empty heart sprite
-    public GameHandler gameHandler; // reference to the LivesManager script
+    public GameHandler gameHandler; // reference to the gameHandler script
 
     void Start() {
         gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
