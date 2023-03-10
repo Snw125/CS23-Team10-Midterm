@@ -19,6 +19,7 @@ public class RestartScript : MonoBehaviour
 
 public void LoadGame ()
 {
+    
     SceneManager.LoadScene("MainMenu");
 }
 
